@@ -195,13 +195,13 @@ mysql> DESCRIBE main;
 +---------------------+--------------+------+-----+---------+-------+
 77 rows in set (0.00 sec)
 
-mysql> LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/ALFAH_main_data_24.4.2023.csv'
+mysql> LOAD DATA INFILE 'File location' 
     -> INTO TABLE main
     -> FIELDS TERMINATED BY ';'
     -> LINES TERMINATED BY '\n'
     -> IGNORE 1 rows;
 
-
+# File location not specified because it is unique to each user. Remember to save the .csv file in the Uploads folder of MySQL Server 8.0, to avoid the "The MySQL server is running with the --secure-file-priv option so it cannot execute this statement" error.
 
 
 
