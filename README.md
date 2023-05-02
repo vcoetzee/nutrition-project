@@ -3,7 +3,7 @@
 ## Title: Is genetic-based, personalised nutrition a viable strategy to improve health in South Africa?
 
 ### Brief Introduction
-Personalised nutrition is a promising emerging research field that could substantially improve public health. Whereas dietary advice generally follows a one-size-fits-all approach, personalised nutrition aims to improve individuals’ health with a diet tailored to their individual biology, especially their genetics. Despite the relative immaturity of the field, companies such as DNALYSIS are already offering DNA diet packages to improve dietary recommendations based on genetic testing.
+Personalised nutrition is a promising emerging research field that could substantially improve public health. Whereas dietary advice generally follows a one-size-fits-all approach, personalised nutrition aims to improve individuals’ health with a diet tailored to their individual biology, especially their genetics. Despite the relative immaturity of the field, commercial companies are already offering DNA diet packages to improve dietary recommendations based on genetic testing.
 
 ### Aim
 The aim of this study is to evaluate whether genetic-based, personalised nutrition could be a viable option to improve health in South Africa.
