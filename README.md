@@ -14,5 +14,5 @@ The aim of this study is to evaluate whether genetic-based, personalised nutriti
 * Determine the association between these genetic variants, diet and diet associated health outcomes.
 
 ### Methods
-Three datasets were included in the project: the main data file (containing demographic, health, food frequency, segmental body fat and muscle data on participants and genotyping datasets 1 and 2 (each contained genotype data on a subset of participants). The main data file was uploaded to the mySQL nutrition database (MySQL 8.0; load-main-from-csv.txt).
+Three datasets were included in the project: the main data file (containing demographic, health, food frequency, segmental body fat and muscle data on participants) and genotyping datasets 1 and 2 (each contained genotype data on a subset of participants). The main data file was uploaded to the mySQL nutrition database using mySQL 8.0 command line client (see load-main-from-csv.txt).
 
