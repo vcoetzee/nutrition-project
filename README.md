@@ -24,8 +24,8 @@ Two saliva samples were collected from each participant and DNA was extracted us
 
 *Feature Engineering*
 <br> *Feature engineering* was performed in jupyter noteboook using Python 3.
-  <br>*Main data set* (nutrition-data-wrangling1)
-  <br>*Missing values:* Initially all variables, except "id" had one or more missing values. One row had no values, except "id". I dropped the row (df.dropna) and reset the index (df.reset_index). Eleven variables were also dropped (df.drop) because they were not important for the analyses. Forty-six (70%) of the remaining variables had one or more missing variables. Missing values were (a) replaced by the mean in forty-two numerical variables and (b) replaced by the most common value in four categorical variables. 
+    <br>*Main data set* (nutrition-data-wrangling1)
+    <br>*Missing values:* Initially all variables, except "id" had one or more missing values. One row had no values, except "id". I dropped the row (df.dropna) and reset the index (df.reset_index). Eleven variables were also dropped (df.drop) because they were not important for the analyses. Forty-six (70%) of the remaining variables had one or more missing variables. Missing values were (a) replaced by the mean in forty-two numerical variables and (b) replaced by the most common value in four categorical variables. 
   <br>*Dimension reduction*
   <br>*Data transformation:* Outliers and distributions were evaluated using df.hist, df.skew, the IQR method (df.quantile; Q1-1.5*IQR/ Q3+1.5*IQR) and the Standard deviation (std) method (df.std; +- 3std). A variable is considered normally distributed if df.skew is between -1 and 1. The std method of outlier classification is preferred if the distribution is normal, while the IQR method is preferred if the distribution is not normal. 
   * Where the outlier is not possible (for instance, age of 405) the outlier is treated as a missing variable and replaced by mean. One outlier in avg_systbp, avg_diabp and avg_pulse was replaced by the mean.
