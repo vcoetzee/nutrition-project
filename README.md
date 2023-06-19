@@ -25,8 +25,8 @@ To be completed
 #### Feature Engineering
 Feature engineering was performed in jupyter noteboook using Python 3.
 
-<u>Main data set</u> (nutrition-data-wrangling1)
-*Missing values:* Initially all variables, except "id" had one or more missing values. One row had no values, except "id". I dropped the row (df.dropna) and reset the index (df.reset_index). Eleven variables were also dropped (df.drop) because they were not important for the analyses. Forty-six (70%) of the remaining variables had one or more missing variables. Missing values were (a) replaced by the mean in forty-two numerical variables and (b) replaced by the most common value in four categorical variables. 
+<u> Main data set</u> (nutrition-data-wrangling1)
+<br>*Missing values:* Initially all variables, except "id" had one or more missing values. One row had no values, except "id". I dropped the row (df.dropna) and reset the index (df.reset_index). Eleven variables were also dropped (df.drop) because they were not important for the analyses. Forty-six (70%) of the remaining variables had one or more missing variables. Missing values were (a) replaced by the mean in forty-two numerical variables and (b) replaced by the most common value in four categorical variables. 
 
 *Dimension reduction*
 
