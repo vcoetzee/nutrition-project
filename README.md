@@ -31,7 +31,7 @@ Feature engineering was performed in jupyter noteboook using Python 3.
 *Dimension reduction*
 
 *Data transformation:* Outliers and distributions were evaluated using df.hist, df.skew, the IQR method (df.quantile; Q1-1.5*IQR/ Q3+1.5*IQR) and the Standard deviation (std) method (df.std; +- 3std). A variable is considered normally distributed if df.skew is between -1 and 1. The std method of outlier classification is preferred if the distribution is normal, while the IQR method is preferred if the distribution is not normal. 
-  * Where the outlier is not possible (for instance, age of 405) the outlier is treated as a missing variable and replaced by mean. One outlier in avg_systbp, avg_diabp and avg_pulse was replaced by the mean.
+  * Where the outlier is not possible (for instance, age of 405) the outlier is treated as a missing variable and replaced by mean. Three impossible outliers were replaced by the mean.
   * Where outliers are present (and possible) and the distribution is positively skewed I first try log-transform
 
 
