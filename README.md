@@ -23,7 +23,7 @@ Two saliva samples were collected from each participant and DNA was extracted us
 My initial plan is to analyze the data using k-means clustering and linear regression.
 
 #### Data wrangling
-Feature engineering was performed in jupyter noteboook using Python 3.
+Data wrangling was performed in jupyter noteboook using Python 3.
 
 *Main data set* 
 <br> The data wrangling steps are detailed in nutrition-data-wrangling1.ipynb
