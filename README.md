@@ -26,7 +26,7 @@ My initial plan is to analyze the data using k-means clustering and linear regre
 Data wrangling was performed in jupyter noteboook using Python 3.
 
 *Main data set* 
-<br> The data wrangling steps are detailed in nutrition-data-wrangling1.ipynb
+<br> The data wrangling steps are detailed in nutrition-data-wrangling.ipynb
 
 *Missing values:* Initially all variables (attributes), except "id" had one or more missing values. One row (observation/ instance) had no values, except "id", so it was dropped (df.dropna) and the index reset (df.reset_index). Eleven variables were also dropped (df.drop) because they were not important for the analyses. Forty-six (70%) of the remaining variables had one or more missing variables. Missing values were (a) replaced by the mean in forty-two numerical variables and (b) replaced by the most common value in five categorical variables. 
 
