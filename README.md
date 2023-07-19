@@ -6,13 +6,20 @@
 Personalised nutrition is a promising emerging research field that could substantially improve public health. Whereas dietary advice generally follows a one-size-fits-all approach, personalised nutrition aims to improve individuals’ health with a diet tailored to their individual biology, especially their genetics. Despite the relative immaturity of the field, commercial companies are already offering DNA diet packages to improve dietary recommendations based on genetic testing.
 
 ### Aim
-The aim of this study is to evaluate whether genetic-based, personalised nutrition could be a viable option to improve health in South Africa.
+The overall aim of this study is to evaluate whether genetic-based, personalised nutrition could be a viable option to improve health in South Africa.
 
 ### Objectives
-* Identify the most promising genetic variants associated with diet-associated health outcomes.
-* Determine the prevalence of these genetic variants in African and South African populations.
-* Determine the association between these genetic variants, diet and diet-associated health outcomes.
+* Experiment 1: Identify the most promising genetic variants associated with diet-associated health outcomes.
+* Experiment 2: Determine the prevalence of these genetic variants in African and South African populations.
+* Experiment 3: Determine which genetic, demographic and/or lifestyle factors predict health in a South African population.
 
+### Experiment 1: Identify the most promising genetic variants associated with diet-associated health outcomes.
+To be completed
+
+### Experiment 2: Determine the prevalence of these genetic variants in African and South African populations.
+To be completed
+
+### Experiment 3: Determine which genetic, demographic and/or lifestyle factors predict health in a South African population.
 ### Methods
 #### Data
 The African Longitudinal Facial Appearance and Health Study (ALFAH) study was approved by research ethics committees at the Faculties of Health Sciences (259/2016), Natural and Agricultural Sciences (EC160429-024) and Humanities (25309995/ HUM030/0819) at the University of Pretoria, South Africa. Two hundred and seventy-one (N=271) African participants (53.3% male) aged 18 to 29 (mean: 20.79) were recruited for the study from the University of Pretoria and the Sefako Makgatho University, Pretoria, South Africa. Written informed sent was obtained from all participants. Participants were asked to complete a questionnaire, including questions on basic demographic variables, their health, exercise and diet (in the past 7 days). Each participant's body weight, percentage body fat and body composition were measured with a Tanita MC 780 MA Segmental Body Composition Analyser; their blood pressure with an automated blood pressure monitor; their grip strength with a JAMAR Hydraulic Hand Dynamometer; and their standing and sitting height with a wall-mounted stadiometer. 
