@@ -1,0 +1,79 @@
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.33 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> SHOW VARIABLES LIKE "secure_file_priv";
++------------------+------------------------------------------------+
+| Variable_name    | Value                                          |
++------------------+------------------------------------------------+
+| secure_file_priv | C:\ProgramData\MySQL\MySQL Server 8.0\Uploads\ |
++------------------+------------------------------------------------+
+1 row in set (1.08 sec)
+
+mysql> SHOW DATABASES;
++--------------------+
+| Database           |
++--------------------+
+| chicago            |
+| information_schema |
+| mysql              |
+| nutrition          |
+| performance_schema |
+| sakila             |
+| sys                |
+| world              |
++--------------------+
+8 rows in set (0.53 sec)
+
+mysql> USE nutrition;
+Database changed
+
+mysql> CREATE TABLE two_snps (sample_id SMALLINT, rs174547_top VARCHAR (2), rs174547_top2 TINYINT, rs9939609_top VARCHAR (2), rs9939609_top2 TINYINT, facility VARCHAR (7));
+Query OK, 0 rows affected (0.95 sec)
+
+mysql> DESCRIBE two_snps;
++----------------+------------+------+-----+---------+-------+
+| Field          | Type       | Null | Key | Default | Extra |
++----------------+------------+------+-----+---------+-------+
+| sample_id      | smallint   | YES  |     | NULL    |       |
+| rs174547_top   | varchar(2) | YES  |     | NULL    |       |
+| rs174547_top2  | tinyint    | YES  |     | NULL    |       |
+| rs9939609_top  | varchar(2) | YES  |     | NULL    |       |
+| rs9939609_top2 | tinyint    | YES  |     | NULL    |       |
+| facility       | varchar(7) | YES  |     | NULL    |       |
++----------------+------------+------+-----+---------+-------+
+6 rows in set (0.01 sec)
+
+mysql> LOAD DATA INFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/two_snps_combined2.csv'
+    -> INTO TABLE two_snps
+    -> FIELDS TERMINATED BY ';'
+    -> LINES TERMINATED BY '\r\n'
+    -> IGNORE 1 rows;
+Query OK, 235 rows affected (0.20 sec)
+Records: 235  Deleted: 0  Skipped: 0  Warnings: 0
+
+mysql> SELECT * FROM two_snps
+    -> LIMIT 10;
++-----------+--------------+---------------+---------------+----------------+----------+
+| sample_id | rs174547_top | rs174547_top2 | rs9939609_top | rs9939609_top2 | facility |
++-----------+--------------+---------------+---------------+----------------+----------+
+|         1 | TT           |             1 | AT            |              2 | uppsala  |
+|         2 | TT           |             1 | AT            |              2 | uppsala  |
+|         3 | CT           |             2 | AT            |              2 | uppsala  |
+|         4 | TT           |             1 | AT            |              2 | uppsala  |
+|         5 | TT           |             1 | AT            |              2 | uppsala  |
+|         6 | TT           |             1 | AA            |              1 | uppsala  |
+|         7 | TT           |             1 | AT            |              2 | uppsala  |
+|         8 | TT           |             1 | AT            |              2 | uppsala  |
+|         9 | TT           |             1 | AA            |              1 | uppsala  |
+|        10 | TT           |             1 | AA            |              1 | uppsala  |
++-----------+--------------+---------------+---------------+----------------+----------+
+10 rows in set (0.00 sec)
