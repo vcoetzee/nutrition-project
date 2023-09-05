@@ -1,0 +1,208 @@
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 10
+Server version: 8.0.33 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2023, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> SELECT * FROM two_snps
+    -> LIMIT 10;
++-----------+--------------+---------------+---------------+----------------+----------+
+| id2 | rs174547_top | rs174547_top2 | rs9939609_top | rs9939609_top2 | facility |
++-----------+--------------+---------------+---------------+----------------+----------+
+|         1 | TT           |             1 | AT            |              2 | uppsala  |
+|         2 | TT           |             1 | AT            |              2 | uppsala  |
+|         3 | CT           |             2 | AT            |              2 | uppsala  |
+|         4 | TT           |             1 | AT            |              2 | uppsala  |
+|         5 | TT           |             1 | AT            |              2 | uppsala  |
+|         6 | TT           |             1 | AA            |              1 | uppsala  |
+|         7 | TT           |             1 | AT            |              2 | uppsala  |
+|         8 | TT           |             1 | AT            |              2 | uppsala  |
+|         9 | TT           |             1 | AA            |              1 | uppsala  |
+|        10 | TT           |             1 | AA            |              1 | uppsala  |
++-----------+--------------+---------------+---------------+----------------+----------+
+10 rows in set (0.00 sec)
+
+mysql> DESCRIBE main;
++---------------------+--------------+------+-----+---------+-------+
+| Field               | Type         | Null | Key | Default | Extra |
++---------------------+--------------+------+-----+---------+-------+
+| id                  | smallint     | NO   | PRI | NULL    |       |
+| age                 | decimal(3,1) | YES  |     | NULL    |       |
+| sex                 | tinyint      | YES  |     | NULL    |       |
+| mother_ethnic       | tinyint      | YES  |     | NULL    |       |
+| father_ethnic       | tinyint      | YES  |     | NULL    |       |
+| income              | tinyint      | YES  |     | NULL    |       |
+| items_home          | tinyint      | YES  |     | NULL    |       |
+| cold_flu            | tinyint      | YES  |     | NULL    |       |
+| antibiotics         | tinyint      | YES  |     | NULL    |       |
+| ill_7days           | tinyint      | YES  |     | NULL    |       |
+| ill_now             | tinyint      | YES  |     | NULL    |       |
+| medication_presc    | tinyint      | YES  |     | NULL    |       |
+| medication_nonpresc | tinyint      | YES  |     | NULL    |       |
+| weight_lostgained   | tinyint      | YES  |     | NULL    |       |
+| exercise_stren      | tinyint      | YES  |     | NULL    |       |
+| exercise_mod        | tinyint      | YES  |     | NULL    |       |
+| exercise_last       | tinyint      | YES  |     | NULL    |       |
+| fruit_juice         | tinyint      | YES  |     | NULL    |       |
+| fruit               | tinyint      | YES  |     | NULL    |       |
+| veg                 | tinyint      | YES  |     | NULL    |       |
+| red_meat            | tinyint      | YES  |     | NULL    |       |
+| chicken             | tinyint      | YES  |     | NULL    |       |
+| pork                | tinyint      | YES  |     | NULL    |       |
+| fish                | tinyint      | YES  |     | NULL    |       |
+| eggs                | tinyint      | YES  |     | NULL    |       |
+| bread               | tinyint      | YES  |     | NULL    |       |
+| pap_samp            | tinyint      | YES  |     | NULL    |       |
+| rice_pasta          | tinyint      | YES  |     | NULL    |       |
+| diary               | tinyint      | YES  |     | NULL    |       |
+| soft_drinks         | tinyint      | YES  |     | NULL    |       |
+| take_away           | tinyint      | YES  |     | NULL    |       |
+| smoke               | tinyint      | YES  |     | NULL    |       |
+| smoke_number        | tinyint      | YES  |     | NULL    |       |
+| alcohol             | tinyint      | YES  |     | NULL    |       |
+| alcohol_7days       | tinyint      | YES  |     | NULL    |       |
+| alcohol_last        | tinyint      | YES  |     | NULL    |       |
+| avg_systbp          | decimal(4,1) | YES  |     | NULL    |       |
+| avg_diabp           | decimal(4,1) | YES  |     | NULL    |       |
+| avg_pulse           | decimal(4,1) | YES  |     | NULL    |       |
+| weight              | decimal(4,1) | YES  |     | NULL    |       |
+| height              | smallint     | YES  |     | NULL    |       |
+| body_fat            | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_mass         | decimal(3,1) | YES  |     | NULL    |       |
+| body_water          | decimal(3,1) | YES  |     | NULL    |       |
+| bmi                 | decimal(3,1) | YES  |     | NULL    |       |
+| visceral_fat        | tinyint      | YES  |     | NULL    |       |
+| metabolic_age       | tinyint      | YES  |     | NULL    |       |
+| bmr                 | smallint     | YES  |     | NULL    |       |
+| bfat_larm           | decimal(3,1) | YES  |     | NULL    |       |
+| bfat_lleg           | decimal(3,1) | YES  |     | NULL    |       |
+| bfat_rarm           | decimal(3,1) | YES  |     | NULL    |       |
+| bfat_rleg           | decimal(3,1) | YES  |     | NULL    |       |
+| bfat_trunk          | decimal(3,1) | YES  |     | NULL    |       |
+| bone_mass           | decimal(3,1) | YES  |     | NULL    |       |
+| ecw                 | decimal(3,1) | YES  |     | NULL    |       |
+| ecw_percentage      | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_mass          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_larm          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_lleg          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_rarm          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_rleg          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_trunk         | decimal(3,1) | YES  |     | NULL    |       |
+| fat_larm            | decimal(3,1) | YES  |     | NULL    |       |
+| fat_lleg            | decimal(3,1) | YES  |     | NULL    |       |
+| fat_rarm            | decimal(3,1) | YES  |     | NULL    |       |
+| fat_rleg            | decimal(3,1) | YES  |     | NULL    |       |
+| fat_trunk           | decimal(3,1) | YES  |     | NULL    |       |
+| icw                 | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_larm         | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_lleg         | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_rarm         | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_rleg         | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_trunk        | decimal(3,1) | YES  |     | NULL    |       |
+| left_grip           | tinyint      | YES  |     | NULL    |       |
+| right_grip          | tinyint      | YES  |     | NULL    |       |
+| sitting_height      | decimal(4,1) | YES  |     | NULL    |       |
+| standing_height     | decimal(4,1) | YES  |     | NULL    |       |
++---------------------+--------------+------+-----+---------+-------+
+77 rows in set (0.03 sec)
+
+mysql> CREATE TABLE nutrition_combined
+    -> select * from main left join two_snps on main.id = two_snps.id2;
+Query OK, 271 rows affected (0.94 sec)
+Records: 271  Duplicates: 0  Warnings: 0
+
+mysql> DESCRIBE nutrition_combined;
++---------------------+--------------+------+-----+---------+-------+
+| Field               | Type         | Null | Key | Default | Extra |
++---------------------+--------------+------+-----+---------+-------+
+| id                  | smallint     | NO   |     | NULL    |       |
+| age                 | decimal(3,1) | YES  |     | NULL    |       |
+| sex                 | tinyint      | YES  |     | NULL    |       |
+| mother_ethnic       | tinyint      | YES  |     | NULL    |       |
+| father_ethnic       | tinyint      | YES  |     | NULL    |       |
+| income              | tinyint      | YES  |     | NULL    |       |
+| items_home          | tinyint      | YES  |     | NULL    |       |
+| cold_flu            | tinyint      | YES  |     | NULL    |       |
+| antibiotics         | tinyint      | YES  |     | NULL    |       |
+| ill_7days           | tinyint      | YES  |     | NULL    |       |
+| ill_now             | tinyint      | YES  |     | NULL    |       |
+| medication_presc    | tinyint      | YES  |     | NULL    |       |
+| medication_nonpresc | tinyint      | YES  |     | NULL    |       |
+| weight_lostgained   | tinyint      | YES  |     | NULL    |       |
+| exercise_stren      | tinyint      | YES  |     | NULL    |       |
+| exercise_mod        | tinyint      | YES  |     | NULL    |       |
+| exercise_last       | tinyint      | YES  |     | NULL    |       |
+| fruit_juice         | tinyint      | YES  |     | NULL    |       |
+| fruit               | tinyint      | YES  |     | NULL    |       |
+| veg                 | tinyint      | YES  |     | NULL    |       |
+| red_meat            | tinyint      | YES  |     | NULL    |       |
+| chicken             | tinyint      | YES  |     | NULL    |       |
+| pork                | tinyint      | YES  |     | NULL    |       |
+| fish                | tinyint      | YES  |     | NULL    |       |
+| eggs                | tinyint      | YES  |     | NULL    |       |
+| bread               | tinyint      | YES  |     | NULL    |       |
+| pap_samp            | tinyint      | YES  |     | NULL    |       |
+| rice_pasta          | tinyint      | YES  |     | NULL    |       |
+| diary               | tinyint      | YES  |     | NULL    |       |
+| soft_drinks         | tinyint      | YES  |     | NULL    |       |
+| take_away           | tinyint      | YES  |     | NULL    |       |
+| smoke               | tinyint      | YES  |     | NULL    |       |
+| smoke_number        | tinyint      | YES  |     | NULL    |       |
+| alcohol             | tinyint      | YES  |     | NULL    |       |
+| alcohol_7days       | tinyint      | YES  |     | NULL    |       |
+| alcohol_last        | tinyint      | YES  |     | NULL    |       |
+| avg_systbp          | decimal(4,1) | YES  |     | NULL    |       |
+| avg_diabp           | decimal(4,1) | YES  |     | NULL    |       |
+| avg_pulse           | decimal(4,1) | YES  |     | NULL    |       |
+| weight              | decimal(4,1) | YES  |     | NULL    |       |
+| height              | smallint     | YES  |     | NULL    |       |
+| body_fat            | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_mass         | decimal(3,1) | YES  |     | NULL    |       |
+| body_water          | decimal(3,1) | YES  |     | NULL    |       |
+| bmi                 | decimal(3,1) | YES  |     | NULL    |       |
+| visceral_fat        | tinyint      | YES  |     | NULL    |       |
+| metabolic_age       | tinyint      | YES  |     | NULL    |       |
+| bmr                 | smallint     | YES  |     | NULL    |       |
+| bfat_larm           | decimal(3,1) | YES  |     | NULL    |       |
+| bfat_lleg           | decimal(3,1) | YES  |     | NULL    |       |
+| bfat_rarm           | decimal(3,1) | YES  |     | NULL    |       |
+| bfat_rleg           | decimal(3,1) | YES  |     | NULL    |       |
+| bfat_trunk          | decimal(3,1) | YES  |     | NULL    |       |
+| bone_mass           | decimal(3,1) | YES  |     | NULL    |       |
+| ecw                 | decimal(3,1) | YES  |     | NULL    |       |
+| ecw_percentage      | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_mass          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_larm          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_lleg          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_rarm          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_rleg          | decimal(3,1) | YES  |     | NULL    |       |
+| ffree_trunk         | decimal(3,1) | YES  |     | NULL    |       |
+| fat_larm            | decimal(3,1) | YES  |     | NULL    |       |
+| fat_lleg            | decimal(3,1) | YES  |     | NULL    |       |
+| fat_rarm            | decimal(3,1) | YES  |     | NULL    |       |
+| fat_rleg            | decimal(3,1) | YES  |     | NULL    |       |
+| fat_trunk           | decimal(3,1) | YES  |     | NULL    |       |
+| icw                 | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_larm         | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_lleg         | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_rarm         | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_rleg         | decimal(3,1) | YES  |     | NULL    |       |
+| muscle_trunk        | decimal(3,1) | YES  |     | NULL    |       |
+| left_grip           | tinyint      | YES  |     | NULL    |       |
+| right_grip          | tinyint      | YES  |     | NULL    |       |
+| sitting_height      | decimal(4,1) | YES  |     | NULL    |       |
+| standing_height     | decimal(4,1) | YES  |     | NULL    |       |
+| id2                 | smallint     | YES  |     | NULL    |       |
+| rs174547_top        | varchar(2)   | YES  |     | NULL    |       |
+| rs174547_top2       | tinyint      | YES  |     | NULL    |       |
+| rs9939609_top       | varchar(2)   | YES  |     | NULL    |       |
+| rs9939609_top2      | tinyint      | YES  |     | NULL    |       |
+| facility            | varchar(7)   | YES  |     | NULL    |       |
++---------------------+--------------+------+-----+---------+-------+
+83 rows in set (0.00 sec)
