@@ -1,5 +1,3 @@
-# nutrition-project (Currently in progress/ to be updated)
-
 # Title: Predicting body composition and blood pressure in a South African student population 
 ## Brief Introduction
 Most research is conducted in WEIRD (Western, Educated, Industrialised, Rich, and Democratic) countries. Less than 1% of the world's research is conducted in Africa. In this study we wanted to explore which demographic and/or lifestyle factors predict aspects of health, specifically body composition and blood pressure, in a Black South African student population. Once these factors are better understood, they can be used to improve health and identify risk factors in this population. The aim of this study is therefore to determine which demographic and/or lifestyle factors predict body composition and blood pressure in a South African student population.
