@@ -12,11 +12,16 @@ The number of missing values were calculated. Four columns and one row with more
 Forward Linear Regression, Regression (Decision) tree, Random Forest, Gradient boosting tree and Support Vector Regression were used to predict body composition and blood pressure. Deep learning models were not included due to the limited sample size. The dataset split into training and testing sets using a 80:20 split. Features were selected for forward linear regression based on the strongest individual correlations and the variance inflation factor (VIF) calculated to detect multicolinearity. Regression trees were pruned based on 5 fold cross validated R2 scores. Random forests estimated using a 1000 estimators.  All analyses were performed in Jupyter notebook 6.4.8 using Python 3.9.12 (main, Apr  4 2022, 05:22:27) [MSC v.1916 64 bit (AMD64)].
 
 ## Results
-Participants were aged 18 to 29 (mean = 20.8; stdev= 1.9)), with BMI's ranging from 15.0 kg/m2 to 42.7 kg/m2 (mean = 23.3 kg/m2; stdev = 4.7). Their systolic blood pressure ranged from 62.0 to 159.0 (mean = 119.4; stdev = 13.0) and their diastolic blood pressure from 36.5 to 107.5 (mean = 74.6; stdev = 8.93). Age, BMI, systolic and diastolic blood pressure were very similar between the sexes.
+Participants were aged 18 to 29 (mean = 20.8; stdev= 1.9)), their BMI's ranging from 15.0 kg/m2 to 42.7 kg/m2 (mean = 23.3 kg/m2; stdev = 4.7), percentage body fat ranging from 3.2% to 49.1% (mean = 23.6; stdev = 10.0) and muscle mass from 30.0 to 73.5kg (mean = 46.7; stdev = 8.5). Their systolic blood pressure ranged from 62.0 to 159.0 (mean = 119.4; stdev = 13.0) and their diastolic blood pressure from 36.5 to 107.5 (mean = 74.6; stdev = 8.93). Age, BMI, systolic and diastolic blood pressure were very similar between the sexes.
 
 | Descriptive | # Women   | # Men   |
 | :---:   | :---: | :---: |
 | Age | 20.8 (1.9)   | 20.8 (1.9)  |
+| bmi | 23.6 (5.1)   | 22.9 (4.4)  |
+| body fat | 26.9 (9.3)   | 20.8 (9.6)  |
+| muscle mass | 43.6 (8.1)   | 49.4 (7.8)  |
+| systolic bp | 118.5 (12.7)   | 120.3 (13.2)  |
+| dia bp | 75.6 (9.1)   | 73.8 (8.7)  |
 
 
 
