@@ -12,8 +12,9 @@ The number of missing values were calculated. Four columns and one row with more
 Forward Linear Regression, Regression (Decision) tree, Random Forest, Gradient boosting tree and Support Vector Regression were used to predict body composition and blood pressure. Deep learning models were not included due to the limited sample size. The dataset split into training and testing sets using a 80:20 split. Features were selected for forward linear regression based on the strongest individual correlations and the variance inflation factor (VIF) calculated to detect multicolinearity. Regression trees were pruned based on 5 fold cross validated R2 scores. Random forests estimated using a 1000 estimators.  All analyses were performed in Jupyter notebook 6.4.8 using Python 3.9.12 (main, Apr  4 2022, 05:22:27) [MSC v.1916 64 bit (AMD64)].
 
 ## Results
-Participants were aged 18 to 29 (mean = 20.8; stdev= 1.9)), their BMI's ranging from 15.0 kg/m2 to 42.7 kg/m2 (mean = 23.3 kg/m2; stdev = 4.7), percentage body fat ranging from 3.2% to 49.1% (mean = 23.6; stdev = 10.0) and muscle mass from 30.0 to 73.5kg (mean = 46.7; stdev = 8.5). Their systolic blood pressure ranged from 62.0 to 159.0 (mean = 119.4; stdev = 13.0) and their diastolic blood pressure from 36.5 to 107.5 (mean = 74.6; stdev = 8.93). Age, BMI, systolic and diastolic blood pressure were very similar between the sexes.
+Participants were aged 18 to 29 (mean = 20.8; stdev= 1.9)), their BMI's ranging from 15.0 kg/m2 to 42.7 kg/m2 (mean = 23.3; stdev = 4.7), percentage body fat ranging from 3.2% to 49.1% (mean = 23.6; stdev = 10.0) and muscle mass from 30.0 to 73.5kg (mean = 46.7; stdev = 8.5). Their systolic blood pressure ranged from 62.0 to 159.0 (mean = 119.4; stdev = 13.0) and their diastolic blood pressure from 36.5 to 107.5 (mean = 74.6; stdev = 8.93). Age and BMI were very similar between the sexes, but the women had a higher percentage body fat, while the men had a higher muscle mass (Table 1). Men had a slightly higher systolic blood pressure on average, while women had a slightly higher diastolic blood pressure on average (Table 1).
 
+Table 1. Descriptive statistics
 | Descriptive | # Women   | # Men   |
 | :---:   | :---: | :---: |
 | Age | 20.8 (1.9)   | 20.8 (1.9)  |
@@ -22,8 +23,6 @@ Participants were aged 18 to 29 (mean = 20.8; stdev= 1.9)), their BMI's ranging 
 | muscle mass | 43.6 (8.1)   | 49.4 (7.8)  |
 | systolic bp | 118.5 (12.7)   | 120.3 (13.2)  |
 | dia bp | 75.6 (9.1)   | 73.8 (8.7)  |
-
-
 
 The first two body composition principal components (PCs) explained 86.7% of the variance, while a third PC only explained an additional 3.3%. Only the first two PCs were therefore included in downstream analyses. PC1 can be referred to as the fat component, with higher values on this component indicating body types that are higher in body fat & metabolic age and lower in strength, muscle and height. PC2 can be referred to as the muscular component with higher values indicating more muscle, height, and a stronger grip, and lower in body fat. I also examined whether PCA would be a sensible approach for the food frequency data, but even four PCs only explained 53.8% of the data. The food frequency indices were therefore used in subsequent analyses.
 
