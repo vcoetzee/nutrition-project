@@ -23,6 +23,7 @@ Table 1. Descriptive statistics
 | muscle mass | 43.6 (8.1)   | 49.4 (7.8)  |
 | systolic bp | 118.5 (12.7)   | 120.3 (13.2)  |
 | dia bp | 75.6 (9.1)   | 73.8 (8.7)  |
+
 Mean (SD)
 
 The first two body composition principal components (PCs) explained 86.7% of the variance, while a third PC only explained an additional 3.3%. Only the first two PCs were therefore included in downstream analyses. PC1 can be referred to as the fat component, with higher values on this component indicating body types that are higher in body fat & metabolic age and lower in strength, muscle, and height. PC2 can be referred to as the muscular component with higher values indicating more muscle, height, and a stronger grip, and lower in body fat. I also examined whether PCA would be a sensible approach for the food frequency data, but even four PCs only explained 53.8% of the data. The food frequency indices were therefore used in subsequent analyses.
