@@ -2,7 +2,7 @@
 ## Brief Introduction
 Most research is conducted in WEIRD (Western, Educated, Industrialised, Rich, and Democratic) countries. Less than 1% of the world's research is conducted in Africa. In this study we wanted to explore which demographic and/or lifestyle factors predict aspects of health, specifically body composition and blood pressure, in a Black South African student population. Once these factors are better understood, they can be used to improve health and identify risk factors in this population. The aim of this study is therefore to determine which demographic and/or lifestyle factors predict body composition and blood pressure in a South African student population.
 
-* * Note: This is a small study on a limited data set. The purpose of the study was mostly to improve my Python skills, not make any major discoveries. For higher impact publications please refer to my formal publication record (https://orcid.org/0000-0003-1716-0804)* *
+* *Note: This is a small study on a limited data set. The purpose of the study was mostly to improve my Python skills, not make any major discoveries. For higher impact publications please refer to my formal publication record (https://orcid.org/0000-0003-1716-0804)* *
 
 ## Methods
 ### Data
